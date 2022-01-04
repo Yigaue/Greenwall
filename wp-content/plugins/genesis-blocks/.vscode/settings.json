@@ -1,0 +1,16 @@
+{
+  "phpcs.enable": true,
+  "phpcs.showSources": true,
+  "phpcs.standard": "WordPress-Extra",
+  "phpcbf.enable": true,
+  "phpcbf.standard": "WordPress-Extra",
+  "phpcbf.executablePath": "./vendor/squizlabs/php_codesniffer/bin/phpcbf",
+  "phpcs.executablePath": "./vendor/squizlabs/php_codesniffer/bin/phpcs",
+  "[json]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "standard.enable": false,
+  "eslint.format.enable": true,
+  "phpcbf.onsave": true
+}

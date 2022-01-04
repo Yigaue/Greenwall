@@ -1,0 +1,37 @@
+/**
+ * Editor styles for the admin
+ */
+
+.gb-block-sharing {
+	margin-bottom: 0;
+}
+
+.gb-share-list > li > a > svg {
+	margin-right: 5px;
+	vertical-align: text-top;
+	width: 16px;
+	height: 16px;
+}
+
+.gb-share-text-only .gb-share-list > li > a > svg {
+	display: none;
+}
+
+.gb-share-size-small .gb-share-list > li > a > svg {
+	width: 13px;
+	height: 13px;
+}
+
+.gb-share-size-medium .gb-share-list > li > a > svg {
+	width: 16px;
+	height: 16px;
+}
+
+.gb-share-size-large .gb-share-list > li > a > svg {
+	width: 26px;
+	height: 26px;
+}
+
+.gb-share-icon-only .gb-share-list > li > a > svg {
+	margin-right: 0;
+}

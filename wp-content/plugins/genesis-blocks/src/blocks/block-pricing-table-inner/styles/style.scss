@@ -1,0 +1,287 @@
+/**
+ * Pricing table styles
+ * Loads on front end and back end
+ */
+
+.wp-block-genesis-blocks-gb-pricing {
+	margin-bottom: 1.5em;
+}
+
+.gb-pricing-table-wrap {
+	display: -ms-grid;
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-areas: "col1";
+	grid-gap: 0 2em;
+}
+
+[data-type="genesis-blocks/gb-pricing-table"],
+.wp-block-genesis-blocks-gb-pricing-table {
+	display: inline-block;
+	vertical-align: top;
+
+	@media only screen and (max-width: 600px) {
+		margin-bottom: 1.5em;
+	}
+}
+
+.gb-block-pricing-table-inside {
+	display: inline-block;
+	width: 100%;
+	border-color: #272c30;
+}
+
+/* Grid gap classes */
+
+.gb-block-pricing-table-gap-0 {
+	grid-gap: 0 0;
+}
+
+.gb-block-pricing-table-gap-1 {
+	grid-gap: 0 1em;
+}
+
+.gb-block-pricing-table-gap-2 {
+	grid-gap: 0 2em;
+}
+
+.gb-block-pricing-table-gap-3 {
+	grid-gap: 0 3em;
+}
+
+.gb-block-pricing-table-gap-4 {
+	grid-gap: 0 4em;
+}
+
+.gb-block-pricing-table-gap-5 {
+	grid-gap: 0 5em;
+}
+
+/* Grid column classes */
+
+.gb-pricing-columns-2 .gb-pricing-table-wrap {
+	-ms-grid-columns: 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: "col1 col2";
+
+	@media only screen and (max-width: 600px) {
+		-ms-grid-columns: 1fr;
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			"col1"
+			"col2";
+	}
+}
+
+.gb-pricing-columns-3 .gb-pricing-table-wrap {
+	-ms-grid-columns: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas: "col1 col2 col3";
+
+	@media only screen and (max-width: 600px) {
+		-ms-grid-columns: 1fr;
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			"col1"
+			"col2"
+			"col3";
+	}
+}
+
+.gb-pricing-columns-4 .gb-pricing-table-wrap {
+	-ms-grid-columns: 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-areas: "col1 col2 col3 col4";
+
+	@media only screen and (max-width: 800px) {
+		-ms-grid-columns: 1fr 1fr;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas:
+			"col1 col2"
+			"col3 col4";
+
+		.wp-block-genesis-blocks-gb-pricing-table {
+			margin-bottom: 1.5em;
+		}
+	}
+
+	@media only screen and (max-width: 600px) {
+		-ms-grid-columns: 1fr;
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			"col1"
+			"col2"
+			"col3"
+			"col4";
+	}
+}
+
+/* Pricing table components */
+
+.gb-pricing-table-price {
+	line-height: 1;
+}
+
+.gb-pricing-table-currency {
+	vertical-align: top;
+	margin-top: 0.4em;
+	margin-right: 3px;
+	display: inline-block;
+	line-height: 1;
+}
+
+.wp-block-genesis-blocks-gb-pricing-table {
+	vertical-align: top;
+
+	.gb-pricing-table-features,
+	.block-library-list & ul {
+		margin: 0;
+		padding: 0;
+		border: none;
+	}
+}
+
+/* IE 11 support - Rows and column location must be explicitly defined. */
+
+.gb-block-pricing-table:nth-child(1) {
+	-ms-grid-row: 1;
+	-ms-grid-column: 1;
+	grid-area: col1;
+}
+
+.gb-block-pricing-table:nth-child(2) {
+	-ms-grid-row: 1;
+	-ms-grid-column: 2;
+	grid-area: col2;
+}
+
+.gb-block-pricing-table:nth-child(3) {
+	-ms-grid-row: 1;
+	-ms-grid-column: 3;
+	grid-area: col3;
+}
+
+.gb-block-pricing-table:nth-child(4) {
+	-ms-grid-row: 1;
+	-ms-grid-column: 4;
+	grid-area: col4;
+}
+
+.editor-styles-wrapper [data-type="genesis-blocks/gb-pricing-table-features"] ul {
+	list-style-type: none;
+	display: block;
+	white-space: initial;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.gb-list-border-solid {
+
+	li {
+		border-bottom-style: solid;
+	}
+}
+
+.gb-list-border-dashed {
+
+	li {
+		border-bottom-style: dashed;
+	}
+}
+
+.gb-list-border-dotted {
+
+	li {
+		border-bottom-style: dotted;
+	}
+}
+
+ul.gb-pricing-table-features li {
+	list-style: none;
+	margin: 0;
+	padding: 4px 0;
+	border-color: inherit;
+
+	&:last-child {
+		border-bottom: none;
+	}
+}
+
+.gb-list-border-width-1 {
+
+	li {
+		border-width: 1px;
+	}
+}
+
+.gb-list-border-width-2 {
+
+	li {
+		border-width: 2px;
+	}
+}
+
+.gb-list-border-width-3 {
+
+	li {
+		border-width: 3px;
+	}
+}
+
+.gb-list-border-width-4 {
+
+	li {
+		border-width: 4px;
+	}
+}
+
+.gb-list-border-width-5 {
+
+	li {
+		border-width: 5px;
+	}
+}
+
+.gb-pricing-table-price,
+.gb-pricing-table-term {
+	display: inline;
+}
+
+span.gb-pricing-table-term {
+	margin-left: 5px;
+}
+
+.gb-pricing-table-wrap .gb-block-pricing-table-inside > *:last-child {
+	margin-bottom: 0;
+}
+
+.wp-block-genesis-blocks-gb-pricing .alignwide,
+.wp-block-genesis-blocks-gb-pricing .alignfull {
+	width: 100%;
+	margin-left: auto;
+}
+
+.gb-block-pricing-table-center {
+	text-align: center;
+
+	.gb-block-button {
+		text-align: center !important;
+	}
+
+	.blocks-button__inline-link {
+		margin: 0 auto;
+		text-align: center;
+	}
+}
+
+.gb-block-pricing-table-left {
+	text-align: left;
+}
+
+.gb-block-pricing-table-right {
+	text-align: right;
+}
+
+.gb-pricing-table-button .gb-block-button {
+	margin-bottom: 0;
+}

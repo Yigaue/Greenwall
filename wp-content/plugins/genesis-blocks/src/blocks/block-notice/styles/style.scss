@@ -1,0 +1,68 @@
+/**
+ * Notice styles
+ * Loads on front end and back end
+ */
+
+.gb-block-notice {
+	border-radius: 5px;
+	position: relative;
+	margin-bottom: 1.2em;
+
+	.gb-notice-dismiss {
+		position: absolute;
+		top: 13px;
+		right: 13px;
+		opacity: 0.8;
+		padding: 0;
+		background: none;
+		transition: 0.3s ease;
+
+		&:hover {
+			opacity: 1;
+			cursor: pointer;
+			box-shadow: none;
+		}
+	}
+
+	.gb-notice-title {
+		font-weight: bold;
+		padding: 0.5em 1em;
+		margin: 0;
+		color: #fff;
+		border-top-right-radius: 5px;
+		border-top-left-radius: 5px;
+		width: 100%;
+		display: inline-block;
+
+		p {
+			margin-bottom: 0;
+		}
+
+		&:empty {
+			display: none;
+		}
+	}
+
+	.gb-notice-text {
+		padding: 1em;
+		border: solid 2px #333;
+		border-radius: 5px;
+		background: #fff;
+
+		p:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.gb-notice-title:not(:empty) + .notice-text,
+	.blocks-rich-text + .blocks-rich-text .gb-notice-text {
+		border-top-right-radius: 0;
+		border-top-left-radius: 0;
+		border-bottom-right-radius: 5px;
+		border-bottom-left-radius: 5px;
+	}
+}
+
+body:not(.wp-admin) .gb-block-notice.gb-dismissable {
+	display: none;
+}

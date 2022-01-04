@@ -1,0 +1,200 @@
+/**
+ * Sharing styles
+ * Loads on front end and back end
+ */
+
+.gb-block-sharing {
+	margin: 0 0 1.2em 0;
+	position: relative;
+
+	.blocks-rich-text {
+		display: inline-flex;
+	}
+
+	.gb-share-list {
+		margin: 0;
+		padding: 0;
+
+		li {
+			list-style: none;
+			display: inline-block;
+			margin: 0 5px 5px 0;
+		}
+
+		a {
+			background: #272c30;
+			border-width: 0;
+			color: #fff;
+			padding: 10px 15px;
+			text-align: center;
+			display: block;
+			line-height: 1;
+			font-size: 16px;
+			transition: 0.3s ease;
+
+			&:hover {
+				box-shadow: inset 0 0 200px rgba(255, 255, 255, 0.15);
+			}
+		}
+
+		svg {
+			vertical-align: text-top;
+		}
+	}
+
+	&.gb-share-icon-text {
+
+		svg {
+			margin-right: 5px;
+		}
+	}
+
+	&.gb-share-icon-only {
+
+		a {
+			padding: 10px 11px;
+			min-width: 37px;
+		}
+
+		.gb-social-text {
+			border: 0;
+			clip: rect(1px, 1px, 1px, 1px);
+			clip-path: inset(50%);
+			height: 1px;
+			margin: -1px;
+			overflow: hidden;
+			padding: 0;
+			position: absolute !important;
+			width: 1px;
+			word-wrap: normal !important;
+		}
+	}
+
+	&.gb-share-text-only {
+
+		svg {
+			display: none;
+		}
+	}
+
+	&.gb-share-shape-square {
+
+		a {
+			border-radius: 0;
+		}
+	}
+
+	&.gb-share-shape-rounded {
+
+		a {
+			border-radius: 5px;
+		}
+	}
+
+	&.gb-share-shape-circular {
+
+		a {
+			border-radius: 100px;
+		}
+	}
+
+	&.gb-share-size-small {
+
+		a {
+			font-size: 13px;
+		}
+
+		svg {
+			width: 13px;
+			height: 13px;
+		}
+	}
+
+	&.gb-share-size-small.gb-share-icon-only {
+
+		a {
+			padding: 7px 6px;
+			min-width: 28px;
+		}
+	}
+
+	&.gb-share-size-medium {
+
+		a {
+			font-size: 16px;
+		}
+
+		svg {
+			width: 16px;
+			height: 16px;
+		}
+	}
+
+	&.gb-share-size-large {
+
+		a {
+			font-size: 20px;
+		}
+
+		svg {
+			width: 26px;
+			height: 26px;
+		}
+	}
+
+	&.gb-share-size-large.gb-share-icon-only {
+
+		a {
+			font-size: 26px;
+			min-width: 48px;
+		}
+	}
+
+	&.gb-share-size-large.gb-share-icon-text {
+
+		svg {
+			margin-right: 10px;
+		}
+	}
+
+	&.gb-share-color-social {
+
+		a {
+			color: #fff;
+		}
+
+		.gb-share-twitter {
+			background: #1ca1f3;
+		}
+
+		.gb-share-facebook {
+			background: #3b5999;
+		}
+
+		.gb-share-google {
+			background: #dc4b45;
+		}
+
+		.gb-share-pinterest {
+			background: #bd091c;
+		}
+
+		.gb-share-linkedin {
+			background: #0077b5;
+		}
+
+		.gb-share-reddit {
+			background: #ff4500;
+		}
+	}
+}
+
+.gb-button-right {
+	transform: translateX(-100%);
+	left: 100%;
+	position: relative;
+}
+
+.gb-button-center {
+	margin: 0 auto;
+}

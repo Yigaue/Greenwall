@@ -1,0 +1,144 @@
+/**
+ * Layout styles
+ * Loads on front end and back end
+ */
+
+.gb-layout-column-button .gb-block-button {
+	margin-bottom: 0;
+}
+
+.gb-layout-selector-group {
+	margin-top: 10px;
+}
+
+.gb-layout-selector {
+	display: inline-block;
+	margin: 0 5px;
+
+	button.gb-layout-selector-button {
+		padding: 15px;
+		height: auto;
+		border-radius: 5px;
+		background: #fff;
+
+		&:hover {
+			background: #fff;
+		}
+	}
+
+	button.components-button.is-button:last-child {
+		border-radius: 5px;
+	}
+}
+
+.gb-toolbar-insert-layout-button {
+	margin-right: 3px;
+}
+
+/**
+ * Layout style modifications
+ * This probably belongs in a theme!
+ */
+
+.gb-layout-team-1 {
+
+	.gb-profile-column {
+		flex: 100%;
+	}
+
+	.gb-social-links {
+		padding-top: 25px;
+	}
+}
+
+.gb-layout-hero-cover {
+
+	.wp-block-cover__inner-container {
+		max-width: 800px;
+	}
+
+	h2,
+	h3,
+	h4 {
+		max-width: 100%;
+	}
+}
+
+.gb-white-text,
+.editor-styles-wrapper [data-type="core/heading"] .gb-white-text {
+	color: #fff;
+}
+
+.gb-layout-landing-2 {
+
+	.gb-block-profile {
+		padding: 0;
+		text-align: center;
+	}
+
+	.gb-block-profile .gb-profile-avatar-wrap,
+	.gb-block-profile .gb-profile-column {
+		flex: 0 0 100%;
+	}
+
+	.round .gb-profile-image-wrap {
+		max-width: 220px;
+		margin: 0 auto;
+	}
+
+	.gb-block-cta {
+
+		.gb-cta-content {
+			max-width: 700px;
+			margin: 0 auto;
+		}
+
+		.gb-button {
+			font-weight: normal;
+		}
+	}
+}
+
+.gb-layout-landing-3 {
+
+	.gb-layout-landing-3-cover {
+
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			margin-left: auto;
+			margin-right: auto;
+
+			@media only screen and (min-width: 600px) {
+				font-size: 42px;
+			}
+		}
+	}
+
+	@media only screen and (min-width: 600px) {
+
+		.gb-block-post-grid header .gb-block-post-grid-title {
+			font-size: 24px;
+		}
+	}
+}
+
+.gpb-slate-section-contact-box {
+
+	.gb-block-layout-column-inner {
+		height: 100%;
+	}
+}
+
+/**
+ * Twenty Twenty theme styles
+ * Let's look at loading these conditionally if the theme is active
+ */
+
+div[class*="gb-section-"].alignfull,
+div[class*="gb-layout-"].alignfull {
+	margin-top: auto;
+	margin-bottom: auto;
+}

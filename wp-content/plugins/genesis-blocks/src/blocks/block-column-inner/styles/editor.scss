@@ -1,0 +1,338 @@
+/**
+ * Editor styles for the admin
+ */
+
+.gb-layout-column-wrap-admin,
+.gb-block-layout-column-inner .block-editor-inner-blocks {
+	position: relative;
+	z-index: 1;
+}
+
+.editor-styles-wrapper [data-type="genesis-blocks/gb-columns"] .wp-block {
+	max-width: 100%;
+}
+
+.edit-post-visual-editor .editor-block-list__block [data-type="genesis-blocks/gb-column"],
+.edit-post-visual-editor .block-editor-block-list__block [data-type="genesis-blocks/gb-column"] {
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.gb-layout-column-wrap-admin > .editor-inner-blocks > .editor-block-list__layout,
+.gb-layout-column-wrap-admin > .block-editor-inner-blocks > .block-editor-block-list__layout {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-rows: 1fr;
+	grid-template-rows: 1fr;
+	grid-gap: 0 2em;
+	min-height: 0;
+}
+
+/* Grid gap classes */
+
+.gb-block-layout-column-gap-0 > .editor-inner-blocks > .editor-block-list__layout,
+.gb-block-layout-column-gap-0 > .block-editor-inner-blocks > .block-editor-block-list__layout {
+	grid-gap: 0 0;
+}
+
+.gb-block-layout-column-gap-1 > .editor-inner-blocks > .editor-block-list__layout,
+.gb-block-layout-column-gap-1 > .block-editor-inner-blocks > .block-editor-block-list__layout {
+	grid-gap: 0 1em;
+}
+
+.gb-block-layout-column-gap-2 > .editor-inner-blocks > .editor-block-list__layout,
+.gb-block-layout-column-gap-2 > .block-editor-inner-blocks > .block-editor-block-list__layout {
+	grid-gap: 0 2em;
+}
+
+.gb-block-layout-column-gap-3 > .editor-inner-blocks > .editor-block-list__layout,
+.gb-block-layout-column-gap-3 > .block-editor-inner-blocks > .block-editor-block-list__layout {
+	grid-gap: 0 3em;
+}
+
+.gb-block-layout-column-gap-4 > .editor-inner-blocks > .editor-block-list__layout,
+.gb-block-layout-column-gap-4 > .block-editor-inner-blocks > .block-editor-block-list__layout {
+	grid-gap: 0 4em;
+}
+
+.gb-block-layout-column-gap-5 > .editor-inner-blocks > .editor-block-list__layout,
+.gb-block-layout-column-gap-5 > .block-editor-inner-blocks > .block-editor-block-list__layout {
+	grid-gap: 0 5em;
+}
+
+.gb-block-layout-column-gap-6 > .editor-inner-blocks > .editor-block-list__layout,
+.gb-block-layout-column-gap-6 > .block-editor-inner-blocks > .block-editor-block-list__layout {
+	grid-gap: 0 6em;
+}
+
+.gb-block-layout-column-gap-7 > .editor-inner-blocks > .editor-block-list__layout,
+.gb-block-layout-column-gap-7 > .block-editor-inner-blocks > .block-editor-block-list__layout {
+	grid-gap: 0 7em;
+}
+
+.gb-block-layout-column-gap-8 > .editor-inner-blocks > .editor-block-list__layout,
+.gb-block-layout-column-gap-8 > .block-editor-inner-blocks > .block-editor-block-list__layout {
+	grid-gap: 0 8em;
+}
+
+.gb-block-layout-column-gap-9 > .editor-inner-blocks > .editor-block-list__layout,
+.gb-block-layout-column-gap-9 > .block-editor-inner-blocks > .block-editor-block-list__layout {
+	grid-gap: 0 9em;
+}
+
+.gb-block-layout-column-gap-10 > .editor-inner-blocks > .editor-block-list__layout,
+.gb-block-layout-column-gap-10 > .block-editor-inner-blocks > .block-editor-block-list__layout {
+	grid-gap: 0 10em;
+}
+
+/* Grid column classes. */
+
+/* IE 11 support - Rows and column location must be explicitly defined. */
+
+.gb-layout-column-wrap-admin .editor-block-list__layout [data-type="genesis-blocks/gb-column"]:nth-child(1),
+.gb-layout-column-wrap-admin .block-editor-block-list__layout [data-type="genesis-blocks/gb-column"]:nth-child(1) {
+	-ms-grid-row: 1;
+	-ms-grid-column: 1;
+	grid-area: col1;
+}
+
+.gb-layout-column-wrap-admin .editor-block-list__layout [data-type="genesis-blocks/gb-column"]:nth-child(2),
+.gb-layout-column-wrap-admin .block-editor-block-list__layout [data-type="genesis-blocks/gb-column"]:nth-child(2) {
+	-ms-grid-row: 1;
+	-ms-grid-column: 2;
+	grid-area: col2;
+}
+
+.gb-layout-column-wrap-admin .editor-block-list__layout [data-type="genesis-blocks/gb-column"]:nth-child(3),
+.gb-layout-column-wrap-admin .block-editor-block-list__layout [data-type="genesis-blocks/gb-column"]:nth-child(3) {
+	-ms-grid-row: 1;
+	-ms-grid-column: 3;
+	grid-area: col3;
+}
+
+.gb-layout-column-wrap-admin .editor-block-list__layout [data-type="genesis-blocks/gb-column"]:nth-child(4),
+.gb-layout-column-wrap-admin .block-editor-block-list__layout [data-type="genesis-blocks/gb-column"]:nth-child(4) {
+	-ms-grid-row: 1;
+	-ms-grid-column: 4;
+	grid-area: col4;
+}
+
+.gb-layout-column-wrap-admin .editor-block-list__layout [data-type="genesis-blocks/gb-column"]:nth-child(5),
+.gb-layout-column-wrap-admin .block-editor-block-list__layout [data-type="genesis-blocks/gb-column"]:nth-child(5) {
+	-ms-grid-row: 1;
+	-ms-grid-column: 5;
+	grid-area: col5;
+}
+
+.gb-layout-column-wrap-admin .editor-block-list__layout [data-type="genesis-blocks/gb-column"]:nth-child(6),
+.gb-layout-column-wrap-admin .block-editor-block-list__layout [data-type="genesis-blocks/gb-column"]:nth-child(6) {
+	-ms-grid-row: 1;
+	-ms-grid-column: 6;
+	grid-area: col6;
+}
+
+/* One column grid. */
+
+.gb-layout-columns-1 > .gb-layout-column-wrap-admin > .editor-inner-blocks > .editor-block-list__layout,
+.gb-layout-columns-1 > .gb-layout-column-wrap-admin > .block-editor-inner-blocks > .block-editor-block-list__layout {
+	-ms-grid-columns: 1fr;
+	grid-template-columns: 1fr;
+	grid-template-areas: "col1";
+}
+
+/* Two column grid. */
+
+.gb-layout-columns-2 > .gb-layout-column-wrap-admin > .editor-inner-blocks > .editor-block-list__layout,
+.gb-layout-columns-2 > .gb-layout-column-wrap-admin > .block-editor-inner-blocks > .block-editor-block-list__layout {
+	-ms-grid-columns: 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: "col1 col2";
+}
+
+.gb-2-col-wideleft > .gb-layout-column-wrap-admin > .editor-inner-blocks > .editor-block-list__layout,
+.gb-2-col-wideleft > .gb-layout-column-wrap-admin > .block-editor-inner-blocks > .block-editor-block-list__layout {
+	-ms-grid-columns: 2fr 1fr;
+	grid-template-columns: 2fr 1fr;
+}
+
+.gb-2-col-wideright > .gb-layout-column-wrap-admin > .editor-inner-blocks > .editor-block-list__layout,
+.gb-2-col-wideright > .gb-layout-column-wrap-admin > .block-editor-inner-blocks > .block-editor-block-list__layout {
+	-ms-grid-columns: 1fr 2fr;
+	grid-template-columns: 1fr 2fr;
+}
+
+/* Three column grid. */
+
+.gb-layout-columns-3 > .gb-layout-column-wrap-admin > .editor-inner-blocks > .editor-block-list__layout,
+.gb-layout-columns-3 > .gb-layout-column-wrap-admin > .block-editor-inner-blocks > .block-editor-block-list__layout {
+	-ms-grid-columns: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas: "col1 col2 col3";
+}
+
+.gb-3-col-widecenter > .gb-layout-column-wrap-admin > .editor-inner-blocks > .editor-block-list__layout,
+.gb-3-col-widecenter > .gb-layout-column-wrap-admin > .block-editor-inner-blocks > .block-editor-block-list__layout {
+	-ms-grid-columns: 1fr 2fr 1fr;
+	grid-template-columns: 1fr 2fr 1fr;
+}
+
+.gb-3-col-wideleft > .gb-layout-column-wrap-admin > .editor-inner-blocks > .editor-block-list__layout,
+.gb-3-col-wideleft > .gb-layout-column-wrap-admin > .block-editor-inner-blocks > .block-editor-block-list__layout {
+	-ms-grid-columns: 2fr 1fr 1fr;
+	grid-template-columns: 2fr 1fr 1fr;
+}
+
+.gb-3-col-wideright > .gb-layout-column-wrap-admin > .editor-inner-blocks > .editor-block-list__layout,
+.gb-3-col-wideright > .gb-layout-column-wrap-admin > .block-editor-inner-blocks > .block-editor-block-list__layout {
+	-ms-grid-columns: 1fr 1fr 2fr;
+	grid-template-columns: 1fr 1fr 2fr;
+}
+
+/* Four column grid. */
+
+.gb-layout-columns-4 > .gb-layout-column-wrap-admin > .editor-inner-blocks > .editor-block-list__layout,
+.gb-layout-columns-4 > .gb-layout-column-wrap-admin > .block-editor-inner-blocks > .block-editor-block-list__layout {
+	-ms-grid-columns: 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-areas: "col1 col2 col3 col4";
+}
+
+.gb-4-col-wideleft > .gb-layout-column-wrap-admin > .editor-inner-blocks > .editor-block-list__layout,
+.gb-4-col-wideleft > .gb-layout-column-wrap-admin > .block-editor-inner-blocks > .block-editor-block-list__layout {
+	-ms-grid-columns: 2fr 1fr 1fr 1fr;
+	grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+
+.gb-4-col-wideright > .gb-layout-column-wrap-admin > .editor-inner-blocks > .editor-block-list__layout,
+.gb-4-col-wideright > .gb-layout-column-wrap-admin > .block-editor-inner-blocks > .block-editor-block-list__layout {
+	-ms-grid-columns: 1fr 1fr 1fr 2fr;
+	grid-template-columns: 1fr 1fr 1fr 2fr;
+}
+
+/* Five column grid. */
+
+.gb-layout-columns-5 > .gb-layout-column-wrap-admin > .editor-inner-blocks > .editor-block-list__layout,
+.gb-layout-columns-5 > .gb-layout-column-wrap-admin > .block-editor-inner-blocks > .block-editor-block-list__layout {
+	-ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-areas: "col1 col2 col3 col4 col5";
+}
+
+.gb-layout-columns-6 > .gb-layout-column-wrap-admin > .editor-inner-blocks > .editor-block-list__layout,
+.gb-layout-columns-6 > .gb-layout-column-wrap-admin > .block-editor-inner-blocks > .block-editor-block-list__layout {
+	-ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-areas: "col1 col2 col3 col4 col5 col6";
+}
+
+.block-editor .gb-layout-columns-4,
+.block-editor .gb-layout-columns-5,
+.block-editor .gb-layout-columns-6 {
+	overflow-x: visible;
+}
+
+/* Alignment styles */
+
+.gb-block-layout-column .editor-block-list__block[data-align=full],
+.gb-block-layout-column .block-editor-block-list__block[data-align=wide],
+.gb-block-layout-column .editor-block-list__block[data-align=full],
+.gb-block-layout-column .block-editor-block-list__block[data-align=wide] {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+[data-type="genesis-blocks/gb-column"] {
+
+	&.gb-is-vertically-aligned-top {
+		align-self: flex-start;
+	}
+
+	&.gb-is-vertically-aligned-center {
+		align-self: center;
+	}
+
+	&.gb-is-vertically-aligned-bottom {
+		align-self: flex-end;
+	}
+}
+
+[data-type="genesis-blocks/gb-columns"] {
+
+	.components-placeholder {
+		padding: 30px;
+	}
+
+	.components-placeholder__fieldset {
+		max-width: 100%;
+	}
+}
+
+.gb-column-selector-button-back {
+	line-height: 1.4;
+	display: block;
+	vertical-align: middle;
+	width: 100%;
+	border-radius: 3px;
+	margin: 25px auto 0 auto;
+
+	&:hover {
+		color: #007cba;
+	}
+
+	&:active,
+	&:focus,
+	&:focus:enabled {
+		background-color: transparent;
+		box-shadow: none;
+	}
+
+	&::before {
+		content: "\2190";
+		margin-right: 5px;
+	}
+
+	svg {
+		width: 16px;
+		margin-right: 5px;
+	}
+}
+
+.gb-column-select-panel {
+
+	.components-button-group {
+		margin-bottom: 4px;
+	}
+
+	.components-button.is-small {
+		height: auto;
+		padding: 8px;
+		margin: 0 5px 5px 0;
+	}
+
+	.components-base-control__field + .components-base-control__help {
+		margin-top: 8px;
+	}
+}
+
+.gb-columns-center .gb-layout-column-wrap-admin {
+	margin: 0 auto;
+}
+
+.gb-block-layout-column .wp-block-image,
+.gb-block-layout-column .wp-block-image .components-resizable-box__container {
+	max-width: 100% !important;
+}
+
+.is-button.gb-inspector-icon-button {
+	display: inline-flex;
+	margin-top: 12px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	height: 40px;
+}
+
+.gb-background-button-group {
+	margin-bottom: 25px;
+}

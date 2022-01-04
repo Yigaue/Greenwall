@@ -1,0 +1,82 @@
+/**
+ * Drop cap styles
+ * Loads on front end and back end
+ */
+
+.entry-content .gb-block-drop-cap {
+
+	.gb-drop-cap-text p::first-letter {
+		float: left;
+		font-size: 75px;
+		line-height: 0.7em;
+		margin-top: 0.15em;
+		margin-right: 25px;
+		margin-bottom: 25px;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+
+	&.gb-drop-cap-square .gb-drop-cap-text p::first-letter {
+		background: #32373c;
+		color: #fff;
+		padding: 0.2em;
+	}
+
+	&.gb-drop-cap-border .gb-drop-cap-text p::first-letter {
+		color: #32373c;
+		padding: 0.2em;
+		border: solid 4px;
+	}
+
+	/* Font size styles */
+	@media only screen and (min-width: 600px) {
+
+		&.gb-font-size-1 .gb-drop-cap-text::first-letter {
+			font-size: 75px;
+		}
+
+		&.gb-font-size-2 .gb-drop-cap-text::first-letter {
+			font-size: 85px;
+		}
+
+		&.gb-font-size-3 .gb-drop-cap-text::first-letter {
+			font-size: 95px;
+		}
+
+		&.gb-font-size-4 .gb-drop-cap-text::first-letter {
+			font-size: 105px;
+		}
+
+		&.gb-font-size-5 .gb-drop-cap-text::first-letter {
+			font-size: 115px;
+		}
+
+		&.gb-font-size-6 .gb-drop-cap-text p::first-letter {
+			font-size: 125px;
+		}
+	}
+}
+
+.gb-block-drop-cap {
+
+	&::before,
+	&::after {
+		content: "";
+		display: table;
+	}
+
+	&::after {
+		clear: both;
+	}
+
+	a {
+		color: inherit;
+		box-shadow: 0 -1px 0 inset;
+		text-decoration: none;
+
+		&:hover {
+			color: inherit;
+			box-shadow: 0 -2px 0 inset;
+		}
+	}
+}

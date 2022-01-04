@@ -1,0 +1,78 @@
+/**
+ * Accordion styles
+ * Loads on front end and back end
+ */
+
+.gb-block-accordion {
+	margin-bottom: 1.2em;
+
+	.gb-accordion-title {
+		background: #f2f2f2;
+		padding: 10px 15px;
+
+		p {
+			display: inline;
+		}
+	}
+
+	.gb-accordion-text {
+		padding: 10px 15px;
+	}
+
+	.editor-rich-text .editor-rich-text__inline-toolbar {
+		display: block;
+		left: 40%;
+	}
+}
+
+.gb-block-accordion + .gb-block-accordion {
+	margin-top: -0.6em;
+}
+
+/* Font size styles */
+@media only screen and (min-width: 600px) {
+
+	.gb-font-size-14 .gb-accordion-title {
+		font-size: 14px;
+	}
+
+	.gb-font-size-15 .gb-accordion-title {
+		font-size: 15px;
+	}
+
+	.gb-font-size-16 .gb-accordion-title {
+		font-size: 16px;
+	}
+
+	.gb-font-size-17 .gb-accordion-title {
+		font-size: 17px;
+	}
+
+	.gb-font-size-18 .gb-accordion-title {
+		font-size: 18px;
+	}
+
+	.gb-font-size-19 .gb-accordion-title {
+		font-size: 19px;
+	}
+
+	.gb-font-size-20 .gb-accordion-title {
+		font-size: 20px;
+	}
+
+	.gb-font-size-21 .gb-accordion-title {
+		font-size: 21px;
+	}
+
+	.gb-font-size-22 .gb-accordion-title {
+		font-size: 22px;
+	}
+
+	.gb-font-size-23 .gb-accordion-title {
+		font-size: 23px;
+	}
+
+	.gb-font-size-24 .gb-accordion-title {
+		font-size: 24px;
+	}
+}

@@ -1,0 +1,27 @@
+{
+  "name": "genesis/blocks",
+  "description": "A beautiful collection of handy Gutenberg blocks to help you get started with the new WordPress editor.",
+  "type": "wordpress-plugin",
+  "license": "GPL-2.0-or-later",
+  "require": {},
+  "require-dev": {
+    "dealerdirect/phpcodesniffer-composer-installer": "^0.5.0",
+    "squizlabs/php_codesniffer": "^3.4.2",
+    "phpcompatibility/php-compatibility": "^9.2.0",
+    "wp-coding-standards/wpcs": "^2.1.1",
+    "sirbrillig/phpcs-variable-analysis": "^2.7",
+    "phpunit/phpunit": "^7.5",
+    "brain/monkey": "2.*"
+  },
+  "scripts": {
+    "lint": "phpcs --standard=phpcs.xml.dist ./lib ./includes ./src",
+    "test": "vendor/bin/phpunit --testdox",
+    "fix:format": "phpcbf --standard=phpcs.xml.dist --report-summary --report-source ./lib ./includes",
+    "fix:autoload": "composer dump-autoload && composer install -o"
+  },
+  "autoload": {
+    "psr-4": {
+      "Genesis\\Blocks\\": "lib/"
+    }
+  }
+}

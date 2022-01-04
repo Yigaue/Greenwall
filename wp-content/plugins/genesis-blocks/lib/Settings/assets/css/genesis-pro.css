@@ -1,0 +1,275 @@
+/**
+ * Genesis Pro admin page styling.
+ */
+
+:root {
+	--color-brand: #06c;
+	--color-blue: #3600cc;
+	--color-heading: #263238;
+	--color-body: #263238;
+	--color-white: #fff;
+	--color-black: #000;
+	--color-dark-gray: #263238;
+	--color-gray: #546e7a;
+	--color-light-gray: #eceff1;
+
+	--color-gray-100: #f7fafc;
+	--color-gray-200: #edf2f7;
+	--color-gray-300: #e2e8f0;
+	--color-gray-400: #cbd5e0;
+	--color-gray-500: #a0aec0;
+	--color-gray-600: #718096;
+	--color-gray-700: #4a5568;
+	--color-gray-800: #2d3748;
+	--color-gray-900: #1a202c;
+	--box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+	--box-shadow-small:
+		0 1px 3px 0 rgba(0, 0, 0, 0.1),
+		0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.genesis-blocks_page_genesis-blocks-pro #wpcontent {
+	padding-left: 0;
+	margin-left: 158px;
+}
+
+.genesis-blocks-genesis-pro-page {
+	padding: 0 0;
+	margin: 0 auto;
+	color: var(--color-body);
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+.wrap.genesis-blocks-genesis-pro-page {
+	margin-top: 0;
+	margin-right: 0;
+}
+
+.genesis-blocks-genesis-pro-page .container p,
+.genesis-blocks-genesis-pro-page .container ul {
+	margin-bottom: 1em;
+	font-size: 1.25em;
+}
+
+.genesis-blocks-genesis-pro-page .gb-content ul {
+	background: var(--color-light-gray);
+	padding: 30px 30px 30px 50px;
+	border-radius: 5px;
+	list-style: disc;
+}
+
+.genesis-blocks-genesis-pro-page .gb-content li {
+	margin-bottom: 10px;
+}
+
+.genesis-blocks-genesis-pro-page .container h1,
+.genesis-blocks-genesis-pro-page .container h2,
+.genesis-blocks-genesis-pro-page .container h3,
+.genesis-blocks-genesis-pro-page .container h4,
+.genesis-blocks-genesis-pro-page .container h5,
+.genesis-blocks-genesis-pro-page .container h6 {
+	font-weight: 500;
+	margin-bottom: 1em;
+}
+
+.genesis-blocks-genesis-pro-page .container h1 {
+	font-size: 1.875rem;
+}
+
+.genesis-blocks-genesis-pro-page .container h2 {
+	font-size: 2em;
+	margin: 0 0 0.5em 0;
+}
+
+.genesis-blocks-genesis-pro-page .container a {
+	color: var(--color-brand);
+	text-decoration: underline;
+}
+
+.genesis-blocks-genesis-pro-page .container {
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+	background-color: var(--color-white);
+}
+
+.genesis-blocks-genesis-pro-page .btn {
+	appearance: none;
+	display: flex;
+	color: var(--color-heading);
+	box-shadow: var(--box-shadow-small);
+	padding: 1.2rem 1.4rem;
+	font-size: 1.5rem;
+	line-height: 1;
+	font-weight: 500;
+	align-items: center;
+	justify-content: center;
+	border-radius: 0.25rem;
+	background-color: #fff;
+	border: 1px solid var(--color-white);
+	text-decoration: none;
+	transition-duration: 0.2s;
+}
+
+.genesis-blocks-genesis-pro-page .btn:hover {
+	cursor: pointer;
+	background-color: var(--color-white);
+	color: var(--color-brand);
+	box-shadow: var(--box-shadow);
+}
+
+.genesis-blocks-genesis-pro-page .btn-secondary {
+	color: var(--color-brand);
+	border-color: var(--color-brand);
+}
+
+.genesis-blocks-genesis-pro-page .btn-secondary:hover {
+	color: var(--color-white);
+	background-color: var(--color-brand);
+}
+
+.genesis-blocks-genesis-pro-page .gb-hero {
+	display: flex;
+	align-items: center;
+	padding: 40px 4%;
+	color: var(--color-white);
+	background-color: #06c;
+	background-image: linear-gradient(90deg, #06c 0%, #4eb0d3 100%);
+}
+
+.genesis-blocks-genesis-pro-page .gb-hero__actions {
+	display: flex;
+	align-items: center;
+	margin-left: auto;
+}
+
+.genesis-blocks-genesis-pro-page .gb-hero__actions a {
+	text-decoration: none;
+}
+
+.genesis-blocks-genesis-pro-page .gb-hero > div > .btn {
+	margin-right: 0.5rem;
+}
+
+.genesis-blocks-genesis-pro-page .gb-hero img {
+	width: 300px;
+}
+
+.genesis-blocks-genesis-pro-page .gb-hero__actions img {
+	width: 40px;
+	filter: invert(1);
+	margin-right: 10px;
+}
+
+.genesis-blocks-genesis-pro-page .gb-hero h3 {
+	display: block;
+	color: #fff;
+	font-size: 1.17em;
+	margin-bottom: 0;
+}
+
+.genesis-blocks-genesis-pro-page .gb-content {
+	flex: 5;
+}
+
+.genesis-blocks-genesis-pro-page .gb-content-body {
+	padding: 4%;
+	display: flex;
+	grid-gap: 6em;
+}
+
+.genesis-blocks-genesis-pro-page ul {
+	list-style: inside;
+}
+
+.genesis-blocks-genesis-pro-page .gen-feature-table {
+	margin-top: 50px;
+	flex: 3;
+}
+
+.genesis-blocks-genesis-pro-page .gen-feature-table--col {
+	text-align: center;
+	border-radius: 6px;
+	padding: 40px;
+	background-image: url(https://wpengine.com/wp-content/uploads/2020/07/gcb_gen_free_plan_bg.png);
+	background-size: cover;
+	color: var(--color-gray);
+}
+
+.genesis-blocks-genesis-pro-page .gen-feature-table--col:last-of-type {
+	background-color: #06c;
+	background-image: linear-gradient(45deg, #06c 0%, #4eb0d3 100%);
+	color: var(--color-white);
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-right: 0;
+	box-shadow: var(--box-shadow);
+	margin-left: auto;
+}
+
+.genesis-blocks-genesis-pro-page .gen-feature-table--col:last-of-type a.btn {
+	text-decoration: none;
+	color: var(--color-heading);
+}
+
+.genesis-blocks-genesis-pro-page .gen-feature-table--col:last-of-type a.btn:hover {
+	color: var(--color-brand);
+}
+
+.genesis-blocks-genesis-pro-page .gen-feature-table--col h3 {
+	color: var(--color-brand);
+	font-size: 2rem;
+	font-weight: 600;
+	margin-top: 0;
+	line-height: 1.2;
+}
+
+.genesis-blocks-genesis-pro-page .gen-feature-table--col:last-of-type h3 {
+	color: var(--color-white);
+}
+
+.genesis-blocks-genesis-pro-page .gen-feature-table--col ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.genesis-blocks-genesis-pro-page .gen-feature-table--col li {
+	position: relative;
+	font-size: 1.2rem;
+	font-weight: 500;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	border-bottom: dotted 1px rgba(255, 255, 255, 0.5);
+}
+
+.genesis-blocks-genesis-pro-page .gen-feature-table--col li:last-of-type {
+	border-bottom: none;
+}
+
+@media (max-width: 680px) {
+
+	.genesis-blocks-genesis-pro-page .gb-hero__actions {
+		flex-direction: column;
+		align-items: flex-start;
+		margin-top: 25px;
+	}
+
+	.genesis-blocks-genesis-pro-page .gb-hero__actions > .btn {
+		margin-bottom: 0.5rem;
+	}
+
+	.genesis-blocks-genesis-pro-page .gb-hero__actions input {
+		margin-left: 0;
+		width: auto;
+	}
+
+	.genesis-blocks-genesis-pro-page .gen-feature-table--col {
+		width: auto;
+	}
+
+	.genesis-blocks-genesis-pro-page .gb-content-body,
+	.genesis-blocks-genesis-pro-page .gb-hero {
+		display: block;
+	}
+}

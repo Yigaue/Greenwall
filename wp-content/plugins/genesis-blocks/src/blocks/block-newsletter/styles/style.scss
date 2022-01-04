@@ -1,0 +1,35 @@
+/**
+ * Front end and back end styles
+ */
+
+.gb-block-newsletter {
+
+	.gb-newsletter-title {
+		margin-top: 0;
+		line-height: 1.3;
+	}
+
+	.gb-block-button {
+		margin-bottom: 0;
+	}
+}
+
+.gb-block-newsletter-label {
+	font-size: 16px;
+}
+
+.gb-form-styles {
+
+	label {
+		margin-bottom: 8px;
+		width: 100%;
+		display: block;
+	}
+
+	input:not(.gb-newsletter-submit) {
+		width: 100%;
+		height: auto;
+		min-height: 45px;
+		margin-bottom: 15px;
+	}
+}
