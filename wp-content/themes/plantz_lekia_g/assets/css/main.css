@@ -188,10 +188,9 @@ header .header-quickaccess{
 header .header-quickaccess a{
     text-decoration: none;
     text-transform: uppercase;
-    padding-right: 50px;
-    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-900) 19px/35px var(--unnamed-font-family-avenir);
+    margin-right: 4.9vw;
     text-align: center;
-    font: normal normal 900 15px/30px Avenir;
+    font: normal normal 900 1.0vw/3vw Avenir-Black;
     letter-spacing: 0.28px;
     color: #346715;
 }
@@ -200,107 +199,140 @@ i{
 }
 header .header-phone{
     display: flex;
+    justify-content: center;
     text-align: center;
+    padding: 0;
+    margin: 0;
     align-items: center;
 }
 header .header-mail{
     display: flex;
     text-align: center;
+    padding: 0;
+    margin: 0;
     align-items: center;
 }
+
+header .header-quickaccess .header-mail div a{
+    padding-right: 7.0vw;
+}
+
+.header-quickaccess div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-quickaccess div .header-icon img{
+    padding: 0 0.5vw 0 0;
+    margin: 0 0 0 0;
+    width: 1.7vw;
+    height: 1.7vw;
+}
+
 header .logo{
     display: flex;
     text-align: center;
     justify-content: center;
     justify-items: center;
-    padding-left: 48px;
-    margin-right: 10px;
 }
 
 header .logo img {
-    width: 185px;
-    height: 44px;
+    width: 13vw;
+    height: 3.5vw;
 }
+
+
 header .search-buy{
     height: fit-content;
-    padding: 0 0 0 145px;
+    padding: 0 0 0 10vw;
     display: flex;
     justify-content: center;
     justify-items: center;
     align-items: center;
     position: absolute;
-    right: 60px;
-    /* border: red solid; */
+    right: 4.9vw;
 }
+
+.header-search img{
+    width: 1.2vw;
+    height: 1.2vw;
+}
+
 header .header-search{
     height: fit-content;
-    width: 296px;
+    width: 16vw;
     /* border: red solid; */
     display: flex;
     justify-content: right;
     justify-items: center;
     align-items: center;
     padding: 0;
-    margin: 0 20px 0 0;
+    margin: 0 1.3vw 0 0;
     /* border: #E7E7E7 solid; */
     background-position: left;
     /* -webkit-transition: width .2s; */
     position:relative;
 }
+
 header .header-search input{
-    width: 30px;
+    width: 1.5vw;
     border: none;
     color: #171616;
-    /* top:0; right:0;  */
-}
-header .header-search input:hover{
-    width: 296px;
-    /* width: 296px; */
-    height: 31px;
-    background: rgba(231, 231, 231, 0.5) 0% 0% no-repeat padding-box;
-    /* opacity: 0.5; */
-    /* border: rgba(231, 231, 231, 0.5) solid; */
 }
 
-header .search-buy i{
-    width: 21px;
-    height: 21px;
+header .header-search input:hover{
+    width: 16vw;
+    height: 5vh;
+    background: rgba(231, 231, 231, 0.5) 0% 0% no-repeat padding-box;
 }
+
 header .buyplant{
     /* border: red solid; */
     display: flex;
     text-align: center;
     justify-content: center;
     justify-items: center;
-    text-align: center;
-    font: normal normal 900 18px/35px Avenir;
-    letter-spacing: 0.28px;
     color: #305624;
 }
+header .buyplant div{
+    padding: 0;
+    margin: 0;
+    width: fit-content;
+}
+
 header .buyplant-text{
-    width: 104px;
-    height: 26px;
+    width: 10vw;
+    height: 2vw;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font: normal normal 900 1.4vw/4vw Avenir-Black;
+    letter-spacing: 0.28px;
 }
+
 header .header-nav{
-    padding-left: 65px;
+    padding-left: 0.6vw;
+    padding-bottom: 0.5vw;
 }
-header .header-nav nav ul a{
-    text-decoration: none;
-    color: #171616;
-}
+    
 header .header-nav nav ul li {
     list-style: none;
     color: #171616;
-    padding-right: 34px;
+    padding-right: 3.3vw;
 }
+
+
+header .header-nav nav ul li a {
+    text-align: center;
+    font: normal normal 900 1vw/2vw Avenir;
+    letter-spacing: 0.28px;
+}
+
 header .header-nav nav ul{
     display: inline-flex;
     width: 100%;
-    height: 26px;
-    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-900) 19px/35px var(--unnamed-font-family-avenir);
-    text-align: center;
-    font: normal normal 900 14px/30px Avenir;
-    letter-spacing: 0.28px;
+    height: 3vh;
 }
 
 /* Dropdown CSS */
@@ -309,19 +341,22 @@ header .header-nav nav ul{
     /* color: #171616; */
     height: fit-content;
     display: inline-flex;
-    padding: 0 30px 0 0;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3.5vw 0 0;
+    z-index: 1000;
     letter-spacing: 0.28px;
-    font: normal normal 900 15px/30px Avenir;
+    font: normal normal 900 1vw/30px Avenir;
     border: none;
     margin: 0;
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0);
 }
+
 .dropbtn p{
-    padding-left: 0 0 0 12px;
+    padding-left: 0 0 0 1.5vw;
     text-align: center;
     margin: 0;
-    /* border: salmon solid; */
 }
 .dropbtn .arrow {
     border: solid black;
@@ -340,34 +375,29 @@ header .header-nav nav ul{
 .dropdown {
     position: relative;
     display: inline-block;
-  }
+}
   
-  .dropdown-content {
+.dropdown-content {
     display: none;
     position: absolute;
-    width: 300px;
+    width: 6vw;
     background-color: #ffffff;
-    /* min-width: 160px; */
     text-align: left;
-    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
     z-index: 1;
-    /* color: #305624; */
-  }
+}
   
- .dropdown-content a {
-    /* color: #171616; */
-    /* padding: 12px 16px; */
+.dropdown-content a {
     text-decoration: none;
     display: block;
-    font: normal normal 900 15px/30px Avenir;
+    font: normal normal 900 1vw/30px Avenir;
     letter-spacing: 0px;
     color: #305624;
-  }
-  .dropdown-content a:hover {background-color: #ffffff}
+}
+.dropdown-content a:hover {background-color: #f0ebeb}
   
-  .dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content {
     display: block;
-  }
+}
   
   /* Homepage CSS */
 main{
