@@ -164,19 +164,26 @@ header .header-anouncement{
     background-color: #346715;
     display: flex;
     justify-content: center;
-    /* justify-items: center; */
     align-items: center;
-    height: 26px;
+    height: 2.5vw;
     font: var(--unnamed-font-style-normal) normal medium 19px/35px var(--unnamed-font-family-avenir);
     /* text-align: center; */
     font: normal normal medium 19px/35px Avenir;
     letter-spacing: 0.28px;
+    padding-top: 3px;
 }
+
+header .header-anouncement p{
+    font: normal normal medium 3vw/6vw Avenir;
+    letter-spacing: 0.03vw;
+}
+
 header .header-quickaccess{
     height: fit-content;
     display: inline-flex;
-    padding-left: 100px;
-    padding-top: 15px;
+    padding-left: 3.5vw;
+    padding-top: 1.5vw;
+    margin-bottom: 0.5vw;
 }
 header .header-quickaccess a{
     text-decoration: none;
@@ -1601,7 +1608,7 @@ a{
 }
 
 header{
-    margin-bottom: 150px;
+    margin-bottom: 14vw;
 }
 
 .header{
@@ -1611,6 +1618,12 @@ header{
     top: 0;
     background-color: #ffffff;
 }
+
+
+.header .white-background{
+    height: 2.2vw;
+}
+
 
 .image-container-carousel .w3-center{
     margin-top: 2vh;
