@@ -12,6 +12,16 @@
     src: url(../../assets/fonts/Montserrat/Montserrat-Bold.ttf);
 }
 
+@font-face {
+    font-family: Avenir-Black;
+    src: url(../../assets/fonts/avenir_ff/AvenirLTStd-Black.otf);
+}
+
+@font-face {
+    font-family: Montserrat-Medium;
+    src: url(../../assets/fonts/Montserrat/Montserrat-Medium.ttf);
+}
+
 body{
     overflow-x: hidden;
 }
@@ -238,8 +248,8 @@ header .logo{
 }
 
 header .logo img {
-    width: 13vw;
-    height: 3.5vw;
+    width: 12vw;
+    height: 2.5vw;
 }
 
 
@@ -326,7 +336,8 @@ header .header-nav nav ul li {
 header .header-nav nav ul li a {
     text-align: center;
     font: normal normal 900 1vw/2vw Avenir;
-    letter-spacing: 0.28px;
+    letter-spacing: 0.02vw;
+    color: #171616;
 }
 
 header .header-nav nav ul{
@@ -410,32 +421,35 @@ main{
 .section-1-container{
     width: 100%;
     height: fit-content;
-    margin-top: 20px;
+    margin-top: 2vw;
     /* border: red solid; */
     display: flex;
 }
+
+.section-1-container .wrapper{
+    position: relative;
+    width: 50%;
+}
+
 .image-carousel{
-    /* top: 237px; */
-    /* left: -9px; */
     width: 100%;
-    height: 500px;
+    height: 40vw;
     grid-row: 1 span 2;
     grid-column: 1;
 }
 .image-carousel img{
     width: 100%;
-    height: 500px;
-    /* object-fit: cover; */
+    height: 40vw;
 }
 
   
 .left-right-arrow{
     display: flex;
-    margin: 24% 0 0 -77px;
+    margin: 25% 0 0 -4vw;
 }
 .left-arrow{
-    width: 76px;
-    height: 76px;
+    width: 4vw;
+    height: 4vw;
     padding: 0;
     opacity: 1;
     display: flex;
@@ -448,47 +462,33 @@ main{
     -webkit-transform: rotate(180deg);
     color: #305624;
     opacity: 1;
-    width: 36px;
-    height: 20px;
+    width: 2vw;
+    height: 1.5vw;
 }
 .right-arrow img{
     color: #FFFFFF;
-    /* background-color: #FFFFFF; */
     opacity: 1;
-    width: 36px;
-    height: 20px;
+    width: 2vw;
+    height: 1.5vw;
 }
 .right-arrow{
     display: flex;
     justify-content: center;
     align-items: center;
     opacity: 1;
-    width: 76px;
-    height: 76px;
+    width: 4vw;
+    height: 4vw;
     padding: 0;
     background: #305624 0% 0% no-repeat padding-box;
 }
-.plant-details{
-    width: 55%;
-    /* transform: matrix(0.66, -0.75, 0.75, 0.66, 0, 0); */
-    /* background: transparent url('Mask Group 6@2x.png') 0% 0% no-repeat padding-box; */
-    background-size: 300px;
-    background-color: rgba(255, 255, 255, 0.25);
-    /* background-position: bottom; */
-    background-position-x: right;
-    background-position-y: bottom;
-    /* opacity: 0.25; */
-}
+
 .plant-description{
     width: fit-content;
     height: inherit;
-    /* border: red solid; */
-    padding: 10px 50px 0 80px;
-    /* grid-row: 1;
-    grid-column: 2/3; */
+    padding: 4vw 0.5vw 0 4vw;
 }
 .plant-description h1{
-    font: normal normal 900 50px Avenir;
+    font: normal normal 900 4vw Avenir-Black;
     letter-spacing: 0px;
     margin: 0;
     opacity: 1;
@@ -499,49 +499,49 @@ main{
 }
 .plant-description p{
     margin: 0;
-    padding: 0 70px 0 0;
+    padding: 0 5vw 0 0;
     text-align: left;
-    font: normal normal normal 15px/30px Montserrat;
+    font: normal normal normal 1vw/1.5vw Montserrat-Medium;
     letter-spacing: 0px;
     color: #1C1C1C;
     opacity: 1;
 }
 .check-catalog{
-    /* grid-row: 2;
-    grid-column: 2/3; */
-    /* border: red solid; */
     display: flex;
-    margin: 120px 20px 0 20px;
+    margin: 12vw 3vw 0 4vw;
     padding: 0;
     height: fit-content;
     padding-bottom: 0;
-   justify-content: center;
-   align-items: center;
+    justify-content: center;
+    align-items: center;
 }
 .checkout-info{
-    width: 280px;
+    width: 18vw;
     height: fit-content;
     line-height: 1.6em;
     color: #1C1C1C;
-    /* font: normal normal normal 18px/40px Avenir; */
+    font: normal normal normal 1vw/2vw Avenir;
     letter-spacing: 0px;
     padding: 0;
 }
 .catalog-button{
-    width: 175px;
-    height: 45px;
-    margin-left: 70px;
+    width: 13vw;
+    height: 3vw;
+    margin-left: 5vw;
     color: #346715;
-    border: 2px #346715 solid;
+    border: 0.1vw #346715 solid;
+    font: normal normal 900 1vw/3vw Avenir;
+    letter-spacing: 0.02vw;
     display: flex;
-    padding: 0 0 0 40px;
+    padding: 0 0 0 2.8vw;
     padding-bottom: 0;
     align-items: center;
 }
 .catalog-button img{
     padding-left: 0;
-    width: 72px;
-    height: 15px;   
+    width: 10vw;
+    height: 1vw;
+    margin:0;   
 }
 .contact-us-button{
     width: 175px;
@@ -556,44 +556,100 @@ main{
     align-items: center;
     justify-content: center;
 }
+
 .section-2-container{
     width: 100%;
     height: fit-content;
-    margin: 100px 50px 0 100px;
-    /* border: red solid; */
-    display: flex;
+    margin: 10vw 5vw 0 8vw;
+    display: flex;;
 }
 .our-mission{
-    width: 55%;
-    padding: 20px 50px 0 0;
+    width: 100%;
+    padding: 2vw 5vw 0 0;
+    z-index: 10;
 }
 .mission-text h2{
-    font: normal normal 900 50px Avenir;
-    letter-spacing: 0px;
-    margin: 10px 0 0 0;
-    opacity: 1;
+    font: normal normal 900 4vw Avenir-Black;
+    margin: 2vw 0 0 0;
     padding: 0;
 }
 .mission-text p{
-    margin: 20px 0 0 0;
-    padding: 0 70px 0 0;
+    margin: 2vw 0 0 0;
+    padding: 0 5vw 0 0;
     text-align: left;
-    font: normal normal normal 15px/30px Montserrat;
-    letter-spacing: 0px;
+    font: normal normal normal 1vw/2vw Montserrat-Regular;
     color: #1C1C1C;
 }
+
+.container-background-plant {
+    background: transparent url('../../assets/images/plant.jpg') 0% 0% no-repeat padding-box;
+    background-size: 73vw;
+    background-color: rgba(255, 255, 255, 0.25);
+    background-position-x: right 1vw;
+    width: 45vw;
+    height: 50vw;
+    background-color: #346715;
+    position: absolute;
+    bottom: -4vw;
+    right: -9vw;
+}
+
+.plant-details{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
 .mission-image{
     width: 45%;
-    height: fit-content;  
+    height: fit-content;   
 }
 .mission-image img{
-    width: 400px;
-    height: 550px;  
+    width: 30vw;
+    height: 38vw;  
 }
 .contact-us-button{
-    margin: 100px 0 0 0;
-    padding: 0 0 0 0;
+    margin: 8vw 0 0 0;
+    padding: 0 1vw 0 1vw;
+    width: 10vw;
+    height: 3vw;
+    margin-left: 0.3vw;
+    color: #346715;
+    border: 0.15vw #346715 solid;
+    background-color: #ffffff;
+    display: flex;
+    padding-bottom: 0;
+    align-items: center;
+    justify-content: center;
+    font-family: Avenir-Black
 }
+
+.contact-us-button:hover{
+    background-color: #305624;
+    border: 0.3vw #305624 solid;
+    color: #E7E7E7;
+    cursor: pointer;
+}
+
+.section-2-container .wrapper {
+    position: relative;
+    width: 55%;
+    z-index: 20;
+}
+
+.section-2-container .wrapper .container-background-plant {
+    background: transparent url('../../assets/images/plant-r.png') 0% 0% no-repeat padding-box;
+    background-size: 70vw;
+    background-color: rgba(255, 255, 255, 0.25);
+    width: 50vw;
+    height: 70vw;
+    position: absolute;
+    bottom: -44vw;
+    left: -37.5vw;
+    z-index: -10;
+    transform: rotate(110deg) scaleX(-1);
+}
+
 .services{
     width: 100%;
     margin: 0;
@@ -833,40 +889,100 @@ main{
     margin: 0;
     height: fit-content;
 }
+
+
 .catalog h2{
-    font: normal normal 900 50px Avenir;
+    font: normal normal 900 4vw Avenir-Black;
     letter-spacing: 0px;
-    /* text-justify: center; */
     padding: 0;
 }
+
 .section-5-container{
+    position: relative;
+}
+
+
+.section-5-container .wrapper{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    margin: 0 0 0 100px;
+    margin: 0 0 0 13vw;
+    padding: 0;
+    column-gap: 5vw;
+    width: fit-content;
 }
-.catalog-image{
+
+.section-5-container .container-background-plant {
+    background: transparent url('../../assets/images/plant-r.png') 0% 0% no-repeat padding-box;
+    background-size: 68vw;
+    background-color: rgba(255, 255, 255, 0.25);
+    width: 50vw;
+    height: 70vw;
+    position: absolute;
+    top: -38vw;
+    right: -14vw;
+    z-index: -10;
+    transform: rotate(15deg);
+}
+
+.section-5-container .container-background-plant2 {
+    background: transparent url('../../assets/images/plant-r.png') 0% 0% no-repeat padding-box;
+    background-size: 60vw;
+    background-color: rgba(255, 255, 255, 0.25);
+    width: 50vw;
+    height: 70vw;
+    position: absolute;
+    bottom: -30vw;
+    left: -12vw;
+    z-index: -10;
+    transform: rotate(-60deg) scaleX(-1);
+}
+
+.catalog .catalog-button{
+    width: 15vw;
+    height: 3vw;
+    color: #346715;
+    border: 0.1vw #346715 solid;
+    font: normal normal 900 1vw/3vw Avenir;
+    letter-spacing: 0.05vw;
+    display: flex;
+    padding: 0 0 0 2.8vw;
+    margin: 0 0 2vw 0;
+    padding-bottom: 0;
+    align-items: center;
+}
+
+.catalog .view-all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.catalog-image {
     border: #E7E7E7 solid;
-    height: 200px;
-    width: 200px;
-    margin: 0 0 15px 0;
+    height: 15vw;
+    width: 15vw;
+    margin: 0 0 3vw 0;
     border-radius: 50%;
     background-color: #E7E7E7;
     display: flex;
     justify-items: center;
     align-items: center;
-    /* align-content: center; */
     justify-content: center;
 }
+
 .catalog-image img{
-    width: 150px;
-    height: 150px;
+    width: 10vw;
+    height: 10vw;
+    padding: 0;
+    margin: 0;
 }
 .plant-name-share{
     margin: 0 0 0 18%;
 }
 .catalog-image-container{
-    margin-bottom: 50px;
+    margin: 0 0 5vw 0;
+    padding: 0;
 }
 
      /* BLOGZ CSS */
@@ -1656,10 +1772,10 @@ header{
 
 
 .image-container-carousel .w3-center{
-    margin-top: 2vh;
+    margin-top: 0.8vw;
 }
 .image-container-carousel .w3-badge{
-    background-color: #FFFFFF;
-    border: 0.1vh #000000B3 solid;
-    margin-right: 1.5vh;
+    background-color: #ffffff;
+    border: 0.05vw #000000B3 solid;
+    margin-right: 0.8vw;
 }
