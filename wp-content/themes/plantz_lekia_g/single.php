@@ -49,6 +49,7 @@ get_header();
 		?>
 
 		<div class="related-post">
+		<div>
 			<div class="related-post-header"><h4>Related Post</h4></div>
 			<div class="blogz-container">
 				<div class="blog-content-container">
@@ -120,6 +121,7 @@ get_header();
 					<div class="learn-more-link">Learn More <img src="<?php bloginfo('template_directory')?>/assets/images/path_3015.svg" alt="right arrow"></div>
 				</div>
 				</div>
+			</div>
 			</div>
 		</div>
 	</main><!-- #main -->

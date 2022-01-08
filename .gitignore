@@ -1,0 +1,17 @@
+wp-admin
+_wpeprivate
+mu-plugins
+upgrade
+uploads
+wp-includes
+.htaccess
+*.php
+readme.html
+license.txt
+*.png
+favicon.ico
+wp-content/themes/*
+wp-content/plugins
+!wp-content/themes/plantz_lekia_g
+mysql.sql
+
