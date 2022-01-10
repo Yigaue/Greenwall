@@ -299,11 +299,14 @@ get_header();
         </div>
         <div class="container-background-plant2"></div>
         </div>
-        <div class="view-all"><div class="catalog-button">VIEW ALL 
-        <svg xmlns="http://www.w3.org/2000/svg" width="70.766" height="15.238" viewBox="0 0 18.766 10.238">
-        <path id="Path_3015" data-name="Path 3015" d="M283.563,1233.923a.684.684,0,0,0,0-.973l-4.423-4.435a.711.711,0,0,0-.984,0,.7.7,0,0,0,0,.987l3.932,3.934-3.932,3.934a.7.7,0,0,0,0,.987.71.71,0,0,0,.984,0Zm-18.563.209h18.071v-1.39H265Z" transform="translate(-265 -1228.318)" fill="#80a868"/>
-        </svg>
-        </div></div>
+        <div class="view-all">
+            <div class="catalog-button">
+                VIEW ALL 
+                <svg xmlns="http://www.w3.org/2000/svg" width="70.766" height="15.238" viewBox="0 0 18.766 10.238">
+                <path id="Path_3015" data-name="Path 3015" d="M283.563,1233.923a.684.684,0,0,0,0-.973l-4.423-4.435a.711.711,0,0,0-.984,0,.7.7,0,0,0,0,.987l3.932,3.934-3.932,3.934a.7.7,0,0,0,0,.987.71.71,0,0,0,.984,0Zm-18.563.209h18.071v-1.39H265Z" transform="translate(-265 -1228.318)" fill="#80a868"/>
+                </svg>
+            </div>
+        </div>
     </section>
 </main>
 
